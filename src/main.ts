@@ -7,7 +7,6 @@ import { HeandingComponent } from '@/components/headingComponent';
 import logo from '@/assets/demo.png';
 import licence from '@/files/LICENSE.txt';
 import json from '@/files/welcome.json';
-import { DefinePlugin } from 'webpack';
 
 const title = new TitleComponent('First page');
 const image = new ImageComponent(logo);
@@ -31,4 +30,4 @@ jsonDivElement.innerText = json.greeting;
 document.body.appendChild(jsonDivElement);
 
 // console.info(VERS);
-console.log(process.env.DB_HOST);
+console.log(process.env.API_KEY);

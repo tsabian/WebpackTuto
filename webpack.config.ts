@@ -16,7 +16,7 @@ const config: webpack.Configuration = {
     alias: {
       "@": path.resolve(__dirname, "src"),
     },
-    extensions: [".js", ".ts", ".tsx", ".html", ".css", ".scss", ".jpg", ".jpeg", ".png", ".svg", ".gif"],
+    extensions: [".js", ".ts", ".tsx"],
   },
   module: {
     rules: [
@@ -46,6 +46,11 @@ const config: webpack.Configuration = {
       {
         test: /\.txt$/,
         use: 'raw-loader',
+        exclude: /node_module/
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        loader: 'url-loader',
         exclude: /node_module/
       }
     ],

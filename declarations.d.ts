@@ -32,3 +32,18 @@ declare module "*.txt" {
   const value: string;
   export default value;
 }
+
+declare module "*.ttf" {
+  const value: any;
+  export default value;
+}
+
+declare module "*.css" {
+  const value: any;
+  export default value;
+}
+
+declare module "*.scss" {
+  const value: any;
+  export default value;
+}
